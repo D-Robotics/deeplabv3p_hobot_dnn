@@ -1,0 +1,3 @@
+model path: "/userdata/hobot_dnn/deeplabv3p_ade20k_nc10_best_Bayese_nv12.bin"
+sub topic: "/hbmem_img"
+pub topic: "/deeplabv3p_mask"
