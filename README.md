@@ -131,3 +131,9 @@ ros2 run hobot_codec hobot_codec_republish \
 --ros-args -p out_mode:=shared_mem \
 --ros-args -p pub_topic:=hbmem_img
 ```
+
+run AI node
+```bash
+source install/setup.bash
+ros2 run deeplabv3p_hobot_dnn deeplabv3p_hobot_dnn
+```

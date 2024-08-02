@@ -104,8 +104,4 @@ install(DIRECTORY
   DESTINATION lib/${PROJECT_NAME}/config/
 )
 
-install(DIRECTORY
-${PROJECT_SOURCE_DIR}/launch/
-DESTINATION share/${PROJECT_NAME}/launch)
-
 ament_package()

@@ -94,7 +94,6 @@ print('Onnx model save as {}'.format(onnx_save_path))
 2. 编译
 ```bash
 rm -rf build install log
-#!/bin/bash
 colcon build --packages-select deeplabv3p_hobot_dnn --parallel-workers 1 --executor sequential
 ```
 
@@ -132,3 +131,8 @@ ros2 run hobot_codec hobot_codec_republish \
 --ros-args -p pub_topic:=hbmem_img
 ```
 
+启动算法推理节点
+```bash
+source install/setup.bash
+ros2 run deeplabv3p_hobot_dnn deeplabv3p_hobot_dnn
+```
